@@ -1,0 +1,274 @@
+.app {
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1591360607974-ca109f8d5996?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 3em 0em;
+  color: #fff;
+}
+
+.toast {
+  text-align: left;
+  border-radius: 15px;
+}
+
+.app-header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:5em;
+  color: #fff;
+}
+
+.title-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0em 3em;
+}
+
+  .title-desc p{
+    font-size: 1.3em;
+  }
+
+.air-p {
+  font-size: 1.5em;
+}
+
+.gauge-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.gauge-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:3em;
+}
+
+.gauge {
+  width: 22.5em;
+}
+
+.power-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.p-btn {
+  width: 22.5em;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.p-btn img{
+  width: 100%;
+  transition: all 0.4s ease;
+  border-radius: 15px;
+  cursor: zoom-in;
+}
+
+.p-btn img:hover{
+  transform: scale(1.05);
+}
+
+.p-btn-desc {
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  top: 2em;
+  right: 2em;
+}
+
+.p-btn-desc button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-arrow {
+  color: transparent;
+}
+
+.credit {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  text-align: center;
+  width: 20em;
+  position: absolute;
+  right: 0;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: #088fce;
+  color: #ffffff;
+}
+
+.credit-name {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.credit-mentor {
+  text-align: center;
+}
+
+.credit-mentor h2 {
+  text-decoration: underline;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  gap:2em;
+  width: 90%;
+  background-color: rgba(11, 11, 11, 0.451);
+  padding: 3em;
+  border-radius: 25px;
+}
+
+.info-part1,
+.info-part2 {
+  display: flex;
+  gap:2em;
+}
+
+.each-info {
+  display: flex;
+  gap:1em;
+  width: 20em;
+}
+
+.info-c1 { color: #79A835; }
+.info-c2 { color: #CFC850; }
+.info-c3 { color: #C16B20; }
+.info-c4 { color: #BC2521; }
+.info-c5 { color: #701640; }
+.info-c6 { color: #5B101D; }
+
+.info-c1,
+.info-c2,
+.info-c3,
+.info-c4,
+.info-c5,
+.info-c6 {
+  font-weight: bold;
+}
+
+.each-info img {
+  width: 4em;
+  border-radius: 15px;
+}
+
+li{
+  margin-left: 2em;
+}
+
+.chart-container {
+  background-color: rgba(249, 249, 249, 0.5);
+  width: 90%;
+  padding: 2em;
+  font-size: large;
+  border-radius: 25px;
+  color: #000;
+}
+
+/* power-button */
+
+#checkbox {
+  display: none;
+}
+
+.switch {
+  opacity: 0.8;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(49, 236, 20);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 1px rgb(49, 236, 20) inset,
+    0px 0px 2px rgb(49, 236, 20) inset, 0px 0px 10px rgb(49, 236, 20) inset,
+    0px 0px 40px rgb(49, 236, 20), 0px 0px 100px rgb(49, 236, 20),
+    0px 0px 5px rgb(49, 236, 20);
+}
+
+.switch svg {
+  width: 1.2em;
+}
+
+.switch svg path {
+  fill: #fff; 
+}
+
+#checkbox:checked + .switch {
+  box-shadow: 0px 0px 1px red inset,
+    0px 0px 2px red inset, 0px 0px 10px red inset,
+    0px 0px 40px red, 0px 0px 100px red,
+    0px 0px 5px red;
+  border: 2px solid white;
+  background-color: red;
+}
+
+#checkbox:checked + .switch svg path {
+  fill: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .app {
+    padding: 5em 0em;
+  }
+
+  .title-desc {
+    gap: 2em;
+    padding: 0em 3em;
+  }
+
+  .gauge-container {
+    flex-direction: column;
+    gap: 4em;
+  }
+
+  .credit {
+    top:2em;
+    right:-1.5em;
+  }
+
+  .info-part1,
+  .info-part2 {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    padding: 1em;
+  }
+}
