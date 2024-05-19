@@ -5,9 +5,9 @@
 #include <WiFiClientSecureBearSSL.h>
 #include <Servo.h>
 
-const char* ssid = "Soumojit's Broadband";
-const char* password = "soumojit@2001";
-const char* serverAddress = "airpbackend.netlify.app";
+const char* ssid = "your-wifi-ssid";
+const char* password = "your-wifi-password";
+const char* serverAddress = "your-server-address";
 const int serverPort = 443;
 const int ledPin = D5; 
 const int greenLedPin = D6;
@@ -177,7 +177,7 @@ void sendAirQualityData(int airQualityValue) {
     std::unique_ptr<BearSSL::WiFiClientSecure>client(new BearSSL::WiFiClientSecure);
     client->setInsecure();
     
-    String url = "https://" + String(serverAddress) + "/.netlify/functions/airquality";
+    String url = "https://" + String(serverAddress) + "your-server-data-path";
     Serial.print("Connecting to: ");
     Serial.println(url);
 
