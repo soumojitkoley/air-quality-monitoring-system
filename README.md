@@ -14,4 +14,4 @@ The Air Quality Monitoring System is a web application designed to monitor and d
 
 - **Frontend**: React, ApexCharts, react-gauge-component
 - **Backend**: Node.js, Express
-- **Hardware**: NodeMCU ESP8266
+- **Hardware**: NodeMCU ESP8266, MQ135
